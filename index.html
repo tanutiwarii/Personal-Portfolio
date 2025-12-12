@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tannu Tiwari | AI Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Placeholder for FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <canvas id="neural-network-bg"></canvas>
+  <div class="glass-overlay"></div>
+
+  <nav class="navbar glass">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="name glitch-hover" data-text="Tannu Tiwari">Tannu Tiwari</h1>
+        <h2 class="title"></h2> <!-- Typewriter fills this -->
+        <p class="description">
+          Building scalable multi-agent systems, deep learning models, and intuitive applications.
+          Passionate about turning data into actionable intelligence.
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary">View Work</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/tannu-tiwari-023177242/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/tanutiwarii" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:tannutiwari9953@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <h2 class="glitch-hover" data-text="Path Way">Path Way</h2>
+      </div>
+      <div class="container timeline-container">
+
+        <!-- Experience -->
+        <div class="timeline-block">
+          <div class="marker"></div>
+          <div class="timeline-content glass">
+            <h3>AI Intern (Remote)</h3>
+            <span class="date">June 2025 – August 2025</span>
+            <p>HCLTech, Noida</p>
+            <ul>
+              <li>Developed a scalable multi-agent LLM chatbot using LangChain, RAG, and ChromaDB.</li>
+              <li>Built ingestion pipelines (chunking, embeddings) improving response relevance by 40%.</li>
+              <li>Integrated autonomous agents for code review and automation, increasing throughput by 35%.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Education -->
+        <div class="timeline-block">
+          <div class="marker"></div>
+          <div class="timeline-content glass">
+            <h3>Bachelor of Engineering (CSE)</h3>
+            <span class="date">Sep 2022 – Present</span>
+            <p>Bennett University, Greater Noida</p>
+            <ul>
+              <li>BTech Computer Science and Engineering specializing in Data Science</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education: Senior Secondary -->
+        <div class="timeline-block">
+          <div class="marker"></div>
+          <div class="timeline-content glass">
+            <h3>Senior Secondary</h3>
+            <span class="date">March 2021 – May 2022</span>
+            <p>Delhi Public School Ghaziabad, Merrut Road</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2 class="glitch-hover" data-text="Technical Arsenal">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass">
+          <h3>AI/ML & Deep Learning</h3>
+          <div class="tags">
+            <span>Machine Learning</span><span>Deep Learning</span><span>Generative AI </span><span>Agentic
+              AI</span><span>Statistics</span><span>Database
+              Systems</span><span>Linear Algebra</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <h3>Tools & Frameworks</h3>
+          <div class="tags">
+            <span>TensorFlow & Keras</span><span>PyTorch</span><span>scikit-learn</span>
+            <span>LangChain</span><span>LLMs</span><span>RAG</span><span>ChromaDB</span><span>OpenCV</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <h3>Programming & Dev</h3>
+          <div class="tags">
+            <span>Python</span><span>C++</span><span>SQL</span>
+            <span>Git & GitHub</span><span>VS Code</span><span>Power BI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section">
+      <div class="section-header">
+        <h2 class="glitch-hover" data-text="Research">Research</h2>
+      </div>
+      <div class="project-card glass featured-research">
+        <div class="card-content">
+          <h3>DeepFake Detection Using Neural Networks</h3>
+          <span class="tag">Research Paper</span>
+          <p>Designed a novel ensemble model combining CNN, ResNet, and Vision Transformer (ViT). Achieved 98.81% test
+            accuracy through fine-tuning and data augmentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2 class="glitch-hover" data-text="Featured Projects">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass tilt-card">
+          <div class="card-content">
+            <h3>Inventory Optimization Platform</h3>
+            <span class="date">March 2025</span>
+            <p>End-to-end demand forecasting system using LSTM, XGBoost, ARIMA, and Prophet. Reduced forecasting error
+              by 25%.</p>
+            <div class="tech-stack">
+              <span>Python</span><span>LSTM</span><span>Streamlit</span>
+            </div>
+            <a href="https://github.com/tanutiwarii/Smart-Time-Series-Inventory-Optimisation-" class="link">View Code <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card glass tilt-card">
+          <div class="card-content">
+            <h3>Music Genre Classification System</h3>
+            <span class="date">January 2025</span>
+            <p>Audio ML pipeline utilizing MFCC, mel-spectrogram, and ensemble classifiers. Achieved 90%+ track
+              reliability.</p>
+            <div class="tech-stack">
+              <span>Python</span><span>Librosa</span><span>Scikit-learn</span>
+            </div>
+            <a href="https://github.com/tanutiwarii/Music-Genre-Classifier" class="link">View Code <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card glass tilt-card">
+          <div class="card-content">
+            <h3>HandWave Harmony</h3>
+            <span class="date">September 2024</span>
+            <p>Gesture-controlled audio system. Decreased motion-to-audio latency by 20ms using MediaPipe and OpenCV.
+            </p>
+            <div class="tech-stack">
+              <span>OpenCV</span><span>MediaPipe</span><span>PyAudio</span>
+            </div>
+            <a href="https://github.com/tanutiwarii/HandWave-Harmony" class="link">View Code <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card glass tilt-card">
+          <div class="card-content">
+            <h3>VisualVerse</h3>
+            <span class="date">Image Captioning</span>
+            <p>Generates descriptive captions for images by combining MobileNetV2 for feature extraction and LSTM
+              for text generation.</p>
+            <div class="tech-stack">
+              <span>Python</span><span>CNN (MobileNetV2)</span><span>LSTM</span><span>NumPy</span>
+            </div>
+            <a href="https://github.com/tanutiwarii/image-caption-generation" class="link">View Code <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="glass contact-box">
+        <h2 class="glitch-hover" data-text="Let's Connect">Let's Connect</h2>
+        <p>I'm available for internships and full-time opportunities. Feel free to reach out!</p>
+
+        <div class="contact-links">
+          <a href="mailto:tannutiwari9953@gmail.com" class="contact-btn">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/tannu-tiwari-023177242/" target="_blank" class="contact-btn">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/tanutiwarii" target="_blank" class="contact-btn">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1PTGRy3XF5G47Yd6etHZyFTmstxs5IXs0/view?usp=sharing" target="_blank" class="contact-btn">
+            <i class="fas fa-file-alt"></i>
+            <span>Resume</span>
+          </a>
+        </div>
+
+        <div class="contact-info-text">
+          <p>+91-9953274885</p>
+          <p>tannutiwari9953@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Tannu Tiwari. Built with <i class="fas fa-heart"></i></p>
+    </footer>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
