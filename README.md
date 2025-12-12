@@ -4,7 +4,7 @@ A premium, modern portfolio website designed for an AI Engineer & Full Stack Dev
 
 ## 🚀 Features
 
-- ** Modern Dark Aesthetic**: Deep dark theme with neon cyan and purple accents.
+- **Modern Dark Aesthetic**: Deep dark theme with neon cyan and purple accents.
 - **✨ Glassmorphism**: Frosted glass effects on cards and navigation for a premium look.
 - **🧠 Neural Network Background**: Interactive HTML5 Canvas particle system simulating neural connections.
 - **🖱️ Custom AI Cursor**: Glowing cursor with a trailing outline for enhanced interactivity.
