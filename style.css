@@ -144,10 +144,10 @@ ul {
 .navbar {
     position: fixed;
     top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    max-width: var(--max-width);
+    right: 20px;
+    /* transform: translateX(-50%); Removed centering */
+    width: auto;
+    /* max-width: var(--max-width); Removed to allow auto width */
     height: var(--nav-height);
     display: flex;
     justify-content: space-between;
@@ -618,15 +618,81 @@ footer i {
     transform: translateY(0);
 }
 
-/* Staggered delays for child elements if needed, or handled via layout */
-.section-header.visible {
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Staggered Child Animations */
+.skill-category .tags span {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.skill-category.visible .tags span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-category.visible .tags span:nth-child(1) {
     transition-delay: 0.1s;
 }
 
-.timeline-content.visible,
-.project-card.visible,
-.skill-category.visible {
-    /* Let them animate naturally as they enter view */
+.skill-category.visible .tags span:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.skill-category.visible .tags span:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.skill-category.visible .tags span:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.skill-category.visible .tags span:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.skill-category.visible .tags span:nth-child(6) {
+    transition-delay: 0.6s;
+}
+
+.skill-category.visible .tags span:nth-child(7) {
+    transition-delay: 0.7s;
+}
+
+.skill-category.visible .tags span:nth-child(8) {
+    transition-delay: 0.8s;
+}
+
+.skill-category.visible .tags span:nth-child(9) {
+    transition-delay: 0.9s;
+}
+
+.skill-category.visible .tags span:nth-child(10) {
+    transition-delay: 1.0s;
+}
+
+/* Magnetic Button (Base Styles) */
+.btn {
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Responsive Menu Styles Fix */
